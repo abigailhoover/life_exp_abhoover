@@ -1,0 +1,13 @@
+---
+title: "Life Expectancy Analysis"
+author: "Abby Hoover"
+date: "8/24/2020"
+output: html_document
+---
+# Abstract
+
+Here I examine the famous plot from Oeppen and Vaupel (2002)
+
+# Analysis
+
+Here I load the data.
