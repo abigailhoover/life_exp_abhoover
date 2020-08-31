@@ -16,6 +16,10 @@ library(tidyverse)
 library(gapminder)
 gapminder
 #data("gapminder_unfiltered")
+```
+
+Here I calculate the maximum life expectancy for each year.
+```{r}
 gapminder_unfiltered %>% 
   group_by(year) %>%
   filter(lifeExp == max(lifeExp)) %>%
