@@ -25,7 +25,8 @@ gapminder_unfiltered %>%
   filter(lifeExp == max(lifeExp)) %>%
   ungroup() %>%
   select(country, year, lifeExp) %>%
-  arrange(year)
+  arrange(year) ->
+  sumdf
 
 gapminder %>% count(year) 
 gapminder %>% filter(lifeExp == max(lifeExp))
