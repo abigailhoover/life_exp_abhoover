@@ -32,3 +32,10 @@ gapminder %>% count(year)
 gapminder %>% filter(lifeExp == max(lifeExp))
 ```
 
+Average 
+```{r}
+gapminder_unfiltered %>%
+  filter(year == 2000) %>%
+  summarize(ave = mean(lifeExp))
+```
+
