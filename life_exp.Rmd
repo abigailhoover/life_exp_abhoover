@@ -11,3 +11,19 @@ Here I examine the famous plot from Oeppen and Vaupel (2002)
 # Analysis
 
 Here I load the data.
+```{r}
+library(tidyverse)
+library(gapminder)
+gapminder
+#data("gapminder_unfiltered")
+gapminder_unfiltered %>% 
+  group_by(year) %>%
+  filter(lifeExp == max(lifeExp)) %>%
+  ungroup() %>%
+  select(country, year, lifeExp) %>%
+  arrange(year)
+
+gapminder %>% count(year) 
+gapminder %>% filter(lifeExp == max(lifeExp))
+```
+
